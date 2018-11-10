@@ -1,0 +1,16 @@
+pipeline {
+    agent any
+    
+    tools {
+		maven "M3"
+		jdk "JDK8_161"
+	}
+
+    stages {
+        stage('Test') {
+            steps {
+                echo 'Testing..'
+            }
+        }
+    }
+}
